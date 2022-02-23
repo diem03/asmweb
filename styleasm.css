@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@400;500&display=swap');
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /* xoa ki hieu o menu*/
+}
+
+
+header {
+    height: 115px;
+    background: #a3b6dd;
+    display: flex;
+    /* can giua*/
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .logo {
+    width: 30%;
+}
+
+header .logo img {
+    height: 100px;
+    width: 100px;
+    border-radius: 40px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    position: relative;
+}
+
+header .search-bar input {
+    width: 300px;
+    color: rgb(10, 10, 10);
+    padding: 10px 20px 10px 40px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+
+}
+
+header .search-bar i {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    /* height: 30px;
+    width: 30px;*/
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    color: gray;
+}
+
+header .cart {
+    width: 18%;
+}
+
+header .cart p {
+    display: inline;
+    /* cho cung 1 hang*/
+    color: white;
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+header .cart i {
+    color: white;
+    font-size: 20px;
+}
+
+#menu {
+    height: 50px;
+    background-color: #f0ede7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0ede7;
+}
+
+li {
+    float: left;
+    /* text-align: center;
+    display: inline;
+    color: #f0ede7; */
+}
+
+li a {
+    text-decoration: #39455f;
+    display: block;
+    /* background-color: #f0ede7; */
+    text-align: center;
+    /* height: 30px; */
+    /* margin: 10px; */
+    padding: 14px 16px;
+    color: #8B4726;
+}
+
+.menu ul li a:hover {
+    color: rgb(221, 10, 10);
+    /*màu khi nhâp chuột*/
+    /* text-decoration: underline; */
+}
+
+.banner {
+    position: relative;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-image: url("../ASM2/img/hoa.jpg");
+}
+
+.banner p {
+
+    text-align: center;
+    margin-bottom: 0px;
+    color: white;
+    font-variant: small-caps;
+    text-shadow: 0 0 10px orangered;
+    font-size: 100px;
+    padding: 210px 100px;
+    /* max-width: 100%;
+    text-align: center; */
+}
+
+.banner>h3 {
+
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.slo {
+    position: relative;
+    height: 200px;
+    background: url("../ASM2/img/bgr\ column.jpg");
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+}
+
+.slo h2 {
+    text-align: center;
+    color: rgb(6, 34, 7);
+    font-size: 30px;
+    padding: 40px 0;
+
+}
+
+.slo p {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+
+.slo:before {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: rgba(0, 0, 0, 0.171);
+}
+
+.column {
+    background-repeat: no-repeat;
+    width: 20%;
+    float: left;
+}
+
+
+.sanpham {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    transition: .1s all;
+}
+
+.sanpham .ten {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.sanpham .hinhanh {
+    overflow: hidden;
+}
+
+.sanpham img {
+    background-size: 20%;
+    width: 100%;
+    aspect-ratio: 6/7;
+    padding: 5px;
+    transition: .3s all;
+}
+
+.sanpham:hover img {
+    transform: scale(1.2);
+}
+
+
+
+h3 {
+    text-align: center;
+    margin-bottom: 0px;
+    color: white;
+    font-variant: small-caps;
+    text-shadow: 0 0 10px rgb(21, 82, 46);
+    font-size: 30px;
+    padding: 50px 50px 2px;
+}
+
+p {
+    font-variant: normal;
+    margin: 4px;
+    font-size: 90%;
+}
+
+.container>footer {
+    top: 1000px;
+    padding: 3px;
+    color: rgb(43, 90, 53)55, 255, 255;
+    border-top: 5px double #CDAA7D;
+    border-right: 5px double #CDAA7D;
+    border-left: 5px double #CDAA7D;
+    border-bottom: 5px double #CDAA7D;
+    border-radius: 10px;
+    line-height: 50px;
+    background-color: rgb(183, 223, 233);
+    text-align: center;
+    clear: both;
+
+}
+.foot{
+    padding-bottom: 50px;
+}
+.container footer a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding-bottom: 50px;
+}
+
+.container footer p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.foot p,a{
+    font-size: 20px;
+}
+
+.gioithieu p{
+    /* display: flex; */
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #39455f;
+    
+}
+.gioithieu{
+    background-color: #f0ede7;
+    width: 100%;
+    height: 50px;
+    
+}
